@@ -1,7 +1,6 @@
 #!/bin/bash
 
-readonly DIR="${0%/*}"
-dotfilesDir="${DIR}/dotfiles"
+dotfilesDir="${HOME}/post-install-ubuntu-18.04/dotfiles"
 
 function linkDotfile {
   dest="${HOME}/${1}"
