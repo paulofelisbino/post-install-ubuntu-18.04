@@ -6,10 +6,13 @@ sudo apt update
 # Install ZSH                                                       #
 #####################################################################
 
-sudo apt install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo apt install -y zsh
 
-# set zsh instead of bash
+#####################################################################
+## Install OH-MY-ZSH                                                #
+#####################################################################
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 chsh -s $(which zsh)
 
 #####################################################################
@@ -24,11 +27,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+~/.fzf/install --all
 
 #####################################################################
 # Install the best theme                                            #
 #####################################################################
 
 git clone https://github.com/dracula/zsh.git ~/dracula.zsh-theme
-ln -s ~/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
+ln -s ~/dracula.zsh-theme/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme

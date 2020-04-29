@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./symlink.sh
 ./programs.sh
+./symlink.sh
