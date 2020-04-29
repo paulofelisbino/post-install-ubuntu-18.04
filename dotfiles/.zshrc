@@ -35,8 +35,8 @@ source $ZSH/oh-my-zsh.sh
 # Aliases                                                           #
 #####################################################################
 
-alias sshvizir="~/projects/pessoal/scripts/set_ssh_key 'work'"
-alias sshpessoal="~/projects/pessoal/scripts/set_ssh_key 'personal'"
+alias sshvizir="~/projects/my_projects/scripts/set_ssh_key 'work'"
+alias sshpessoal="~/projects/my_projects/scripts/set_ssh_key 'personal'"
 
 alias dc="docker-compose"
 alias dcps="docker-compose ps"
