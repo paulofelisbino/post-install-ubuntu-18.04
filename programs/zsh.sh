@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update
+start_section "zsh"
 
 #####################################################################
 # Install ZSH                                                       #
@@ -35,3 +35,5 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 git clone https://github.com/dracula/zsh.git ~/dracula.zsh-theme
 ln -s ~/dracula.zsh-theme/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
+
+finish_section "zsh"

@@ -1,25 +1,20 @@
 #!/bin/bash
 
-#####################################################################
-# Remove possible apt locks                                         #
-#####################################################################
-sudo rm /var/lib/dpkg/lock-frontend
-sudo rm /var/cache/apt/archives/lock
+start_section "programs"
+
+sudo apt update
 
 #####################################################################
-# Install general dependencies                                      #
+# Variables                                                         #
 #####################################################################
-sudo apt update
-sudo apt install -y curl
+
+DOWNLOADS_DIR="$HOME/Downloads/post-install-programs-debs"
 
 #####################################################################
 # Install stuff                                                     #
 #####################################################################
 
-cd programs/
+sudo apt install -y curl awscli
 
-./zsh.sh
-
-#####################################################################
-# Wrapping up                                                       #
-#####################################################################
+source ./programs/chrome.sh
+source ./programs/zsh.sh
