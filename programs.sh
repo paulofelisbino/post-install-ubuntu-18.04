@@ -19,5 +19,6 @@ sudo apt install -y curl awscli
 source ./programs/chrome.sh
 source ./programs/vscode.sh
 source ./programs/openfortigui.sh
+source ./programs/slack.sh
 source ./programs/spotify.sh
 source ./programs/zsh.sh

@@ -2,10 +2,10 @@
 
 start_section "chrome"
 
-DEB_NAME="google-chrome-stable_current_amd64.deb"
-URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/$DEB_NAME"
+DEB="google-chrome-stable_current_amd64.deb"
+URL="https://dl.google.com/linux/direct/$DEB"
 
-wget -c "$URL_GOOGLE_CHROME" -P "$DOWNLOADS_DIR"
-sudo dpkg -i "$DOWNLOADS_DIR/$DEB_NAME"
+wget -c "$URL" -P "$DOWNLOADS_DIR"
+sudo dpkg -i "$DOWNLOADS_DIR/$DEB"
 
 finish_section "chrome"

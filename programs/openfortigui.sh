@@ -9,7 +9,7 @@ start_section "openfortigui"
 sudo apt install -y libqt5core5a libqt5gui5 libqt5keychain1 libqt5network5 libqt5widgets5 qttranslations5-l10n
 
 #####################################################################
-# Install openfortigui                                              #
+# Install                                                           #
 #####################################################################
 
 DEB="openfortigui_0.8.2-1_amd64_bionic.deb"
