@@ -14,7 +14,9 @@ DOWNLOADS_DIR="$HOME/Downloads/post-install-programs-debs"
 # Install stuff                                                     #
 #####################################################################
 
-sudo apt install -y curl awscli
+sudo apt install -y snapd curl awscli
+
+sudo snap install bitwarden
 
 source ./programs/chrome.sh
 source ./programs/vscode.sh
