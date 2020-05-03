@@ -3,19 +3,19 @@
 #####################################################################
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/home/paulo/.oh-my-zsh"
+
+#####################################################################
+# Theme - must come first                                           #
+#####################################################################
+
+ZSH_THEME="dracula"
 
 #####################################################################
 # Path                                                              #
 #####################################################################
 
 export PATH=~/.local/bin:$PATH
-
-#####################################################################
-# Terminal Style                                                    #
-#####################################################################
-
-ZSH_THEME="dracula"
 
 #####################################################################
 # Plugins                                                           #
@@ -32,11 +32,17 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #####################################################################
+# Terminal Style                                                    #
+#####################################################################
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
+
+#####################################################################
 # Aliases                                                           #
 #####################################################################
 
-alias sshvizir="~/projects/my_projects/scripts/set_ssh_key 'work'"
-alias sshpessoal="~/projects/my_projects/scripts/set_ssh_key 'personal'"
+alias sshvizir="~/projects/pessoal/scripts/set_ssh_key 'work'"
+alias sshpessoal="~/projects/pessoal/scripts/set_ssh_key 'personal'"
 
 alias dc="docker-compose"
 alias dcps="docker-compose ps"
@@ -48,4 +54,4 @@ alias dcr="docker-compose restart"
 
 alias update="sudo apt update"
 
-alias graphiql="/opt/graphiql-app-0.7.2-x86_64.AppImage"
+alias graphiql="$HOME/graphiql-app-0.7.2-x86_64.AppImage"
