@@ -15,7 +15,7 @@ mkdir -p "$DOWNLOADS_DIR"
 # Install stuff                                                     #
 #####################################################################
 
-sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd
+sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd terminator
 
 source ./programs/dbeaver.sh
 source ./programs/graphiql.sh
