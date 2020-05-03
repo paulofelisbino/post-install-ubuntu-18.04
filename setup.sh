@@ -3,6 +3,17 @@ set -euo pipefail
 
 source ./colors.sh
 
+#####################################################################
+# Variables                                                         #
+#####################################################################
+
+DOWNLOADS_DIR="$HOME/Downloads/post-install-downloads"
+mkdir -p "$DOWNLOADS_DIR"
+
+#####################################################################
+# Common functions                                                  #
+#####################################################################
+
 function start_section() {
   blue_text "Installing ${1}..."
 }
@@ -16,4 +27,5 @@ function finish_section() {
 #####################################################################
 
 source ./programs.sh
+source ./theme.sh
 source ./symlink.sh
