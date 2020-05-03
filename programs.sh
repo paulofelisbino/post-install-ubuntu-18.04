@@ -18,6 +18,7 @@ mkdir -p "$DOWNLOADS_DIR"
 sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd terminator
 
 source ./programs/dbeaver.sh
+source ./programs/docker.sh
 source ./programs/graphiql.sh
 source ./programs/openfortigui.sh
 source ./programs/postman.sh
