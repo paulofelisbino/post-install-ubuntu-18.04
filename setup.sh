@@ -7,7 +7,7 @@ source ./colors.sh
 # Variables                                                         #
 #####################################################################
 
-DOWNLOADS_DIR="$HOME/Downloads/post-install-downloads"
+readonly DOWNLOADS_DIR="$HOME/Downloads/post-install-downloads"
 mkdir -p "$DOWNLOADS_DIR"
 
 #####################################################################

@@ -12,9 +12,6 @@ sudo apt-get install -y libcanberra-gtk-module
 # Download AppImage                                                 #
 #####################################################################
 
-DOWNLOADS_DIR="$HOME/Downloads/post-install-programs-debs"
-mkdir -p "$DOWNLOADS_DIR"
-
 APP="graphiql-app-0.7.2-x86_64.AppImage"
 URL="https://github.com/skevy/graphiql-app/releases/download/v0.7.2/$APP"
 
