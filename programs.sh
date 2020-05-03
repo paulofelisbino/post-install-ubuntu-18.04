@@ -29,4 +29,4 @@ source ./programs/spotify.sh
 
 source ./programs/zsh.sh
 
-sudo snap install bitwarden
+sudo snap install authy --beta && sudo snap install bitwarden
