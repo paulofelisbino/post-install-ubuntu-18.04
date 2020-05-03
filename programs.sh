@@ -15,7 +15,7 @@ mkdir -p "$DOWNLOADS_DIR"
 # Install stuff                                                     #
 #####################################################################
 
-sudo apt install -y snapd curl awscli
+sudo apt install -y awscli curl filezilla snapd
 
 source ./programs/dbeaver.sh
 source ./programs/openfortigui.sh
