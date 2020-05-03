@@ -9,6 +9,7 @@ sudo apt update -y
 #####################################################################
 
 DOWNLOADS_DIR="$HOME/Downloads/post-install-programs-debs"
+mkdir -p "$DOWNLOADS_DIR"
 
 #####################################################################
 # Install stuff                                                     #
@@ -16,12 +17,15 @@ DOWNLOADS_DIR="$HOME/Downloads/post-install-programs-debs"
 
 sudo apt install -y snapd curl awscli
 
-sudo snap install bitwarden
+source ./programs/vscode.sh
+source ./programs/postman.sh
+source ./programs/slack.sh
+source ./programs/openfortigui.sh
 
 source ./programs/chrome.sh
-source ./programs/vscode.sh
-source ./programs/openfortigui.sh
-source ./programs/slack.sh
-source ./programs/postman.sh
+source ./programs/tusk.sh
 source ./programs/spotify.sh
+
 source ./programs/zsh.sh
+
+sudo snap install bitwarden
