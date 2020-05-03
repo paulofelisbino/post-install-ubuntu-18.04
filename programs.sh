@@ -18,6 +18,7 @@ mkdir -p "$DOWNLOADS_DIR"
 sudo apt install -y awscli curl filezilla snapd
 
 source ./programs/dbeaver.sh
+source ./programs/graphiql.sh
 source ./programs/openfortigui.sh
 source ./programs/postman.sh
 source ./programs/slack.sh
