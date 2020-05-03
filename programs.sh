@@ -17,10 +17,11 @@ mkdir -p "$DOWNLOADS_DIR"
 
 sudo apt install -y snapd curl awscli
 
-source ./programs/vscode.sh
+source ./programs/dbeaver.sh
+source ./programs/openfortigui.sh
 source ./programs/postman.sh
 source ./programs/slack.sh
-source ./programs/openfortigui.sh
+source ./programs/vscode.sh
 
 source ./programs/chrome.sh
 source ./programs/tusk.sh
