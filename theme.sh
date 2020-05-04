@@ -17,4 +17,6 @@ cp -r flat-remix/Flat-Remix* "$ICONS_DIR"
 cp -r flat-remix-gtk/Flat-Remix-GTK* "$THEMES_DIR"
 cd -
 
+cp ./wallpaper/wallpaper.jpg $HOME/Pictures
+
 finish_section "theme"
