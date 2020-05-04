@@ -29,3 +29,5 @@ function finish_section() {
 source ./programs.sh
 source ./theme.sh
 source ./symlink.sh
+
+dconf load / < ./dotfiles/settings.dconf
