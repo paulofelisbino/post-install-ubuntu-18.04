@@ -8,7 +8,7 @@ sudo apt update -y
 # Install stuff                                                     #
 #####################################################################
 
-sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd terminator
+sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd terminator tmux
 
 source ./programs/dbeaver.sh
 source ./programs/docker.sh

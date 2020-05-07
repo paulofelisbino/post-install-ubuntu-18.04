@@ -27,5 +27,6 @@ function linkDotfile {
 }
 
 linkDotfile .zshrc
+linkDotfile .tmux.conf
 linkDotfile .gitconfig
 linkDotfile .gitmessage

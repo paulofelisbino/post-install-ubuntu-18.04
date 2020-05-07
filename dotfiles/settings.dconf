@@ -23,12 +23,12 @@ numlock-state='off'
 locate-pointer=false
 
 [org/gnome/shell]
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'refresh-wifi@kgshank.net', 'multi-monitors-add-on@spin83', 'openweather-extension@jenslody.de', 'panel-osd@berend.de.schouwer.gmail.com', 'caffeine@patapon.info', 'gravatar@jr.rlabs.io']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'refresh-wifi@kgshank.net', 'multi-monitors-add-on@spin83', 'openweather-extension@jenslody.de', 'panel-osd@berend.de.schouwer.gmail.com', 'caffeine@patapon.info', 'gravatar@jr.rlabs.io', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com']
 command-history=['r']
 disable-user-extensions=false
 app-picker-view=uint32 1
 enable-hot-corners=false
-favorite-apps=['org.gnome.Nautilus.desktop', 'terminator.desktop', 'google-chrome.desktop', 'code.desktop', 'openfortigui.desktop', 'spotify_spotify.desktop', 'slack.desktop', 'Postman.desktop', 'telegramdesktop.desktop', 'bitwarden_bitwarden.desktop', 'tusk_tusk.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'google-chrome.desktop', 'code.desktop', 'spotify_spotify.desktop', 'openfortigui.desktop', 'slack.desktop', 'Postman.desktop', 'telegramdesktop.desktop', 'bitwarden_bitwarden.desktop', 'tusk_tusk.desktop']
 
 [org/gnome/shell/overrides]
 workspaces-only-on-primary=false
@@ -440,7 +440,7 @@ photo-x-resolution=640
 video-x-resolution=640
 
 [org/gnome/control-center]
-last-panel='user-accounts'
+last-panel='display'
 
 [org/gnome/power-manager]
 info-history-type='time-empty'
@@ -454,6 +454,11 @@ use-background-color=true
 
 [org/gnome/eog/ui]
 sidebar=false
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-system-font=false
+audible-bell=true
+font='Source Code Pro for Powerline 12'
 
 [org/gnome/terminal/legacy]
 schema-version=uint32 3
@@ -490,7 +495,7 @@ col-6-visible=true
 col-6-width=0
 
 [org/gnome/software]
-check-timestamp=int64 1588587879
+check-timestamp=int64 1588843545
 
 [org/gnome/mutter]
 dynamic-workspaces=false
@@ -499,7 +504,7 @@ workspaces-only-on-primary=false
 [org/gtk/settings/file-chooser]
 sort-column='name'
 sidebar-width=300
-window-position=(320, 1001)
+window-position=(320, 984)
 show-size-column=true
 show-hidden=false
 window-size=(1280, 832)
@@ -524,11 +529,11 @@ last-crop-menu-choice=0
 
 [apps/update-manager]
 first-run=false
-launch-time=int64 1588592124
+launch-time=int64 1588763104
 window-height=536
 show-details=true
-launch-count=143
+launch-count=145
 window-width=684
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1587573690
+release-check-time=uint32 1588783489
