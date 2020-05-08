@@ -10,6 +10,9 @@ sudo apt update -y
 
 sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd terminator tmux
 
+#install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 source ./programs/dbeaver.sh
 source ./programs/docker.sh
 source ./programs/graphiql.sh
