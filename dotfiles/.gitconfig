@@ -1,4 +1,6 @@
 [user]
 	email = paulofelisbino06@gmail.com
-	# email = paulo@vizir.com.br
 	name = Paulo Felisbino
+[core]
+	editor = code -w
+	hooksPath = /home/paulo/.git-templates/hooks

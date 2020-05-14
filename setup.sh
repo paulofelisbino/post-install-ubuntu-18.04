@@ -27,6 +27,7 @@ function finish_section() {
 #####################################################################
 
 source ./fonts.sh
+source ./git.sh
 source ./programs.sh
 source ./theme.sh
 source ./symlink.sh
