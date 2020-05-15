@@ -55,3 +55,12 @@ alias dcr="docker-compose restart"
 alias update="sudo apt update"
 
 alias graphiql="$HOME/graphiql-app-0.7.2-x86_64.AppImage"
+
+#####################################################################
+# Configs                                                           #
+#####################################################################
+
+# always start tmux on terminal
+if [ -z "$TMUX" ]; then
+  tmux attach -t default || tmux new -s default
+fi

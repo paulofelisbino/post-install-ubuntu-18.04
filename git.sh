@@ -36,5 +36,3 @@ linkHook commit-msg.py
 #####################################################################
 
 linkDotfile .gitconfig
-
-blue_text "Git hooks configured!"

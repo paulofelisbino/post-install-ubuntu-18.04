@@ -25,5 +25,3 @@ function linkDotfile {
   echo "Creating new symlink: ${dest}"
   ln -s ${dotfilesDir}/${1} ${dest}
 }
-
-# linkDotfile .tmux.conf
