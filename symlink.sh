@@ -1,10 +1,10 @@
 #!/bin/bash
 
-dotfilesDir="${HOME}/post-install-ubuntu-18.04/dotfiles"
+readonly dotfilesDir="${HOME}/post-install-ubuntu-18.04/dotfiles"
 
 function linkDotfile {
-  dest="${HOME}/${1}"
-  dateStr=$(date +%Y-%m-%d-%H%M)
+  local dest="${HOME}/${1}"
+  local dateStr=$(date +%Y-%m-%d-%H%M)
 
   if [ -h ~/${1} ]; then
     # Existing symlink
@@ -26,6 +26,4 @@ function linkDotfile {
   ln -s ${dotfilesDir}/${1} ${dest}
 }
 
-linkDotfile .zshrc
-linkDotfile .tmux.conf
-linkDotfile .gitconfig
+# linkDotfile .tmux.conf

@@ -2,6 +2,7 @@
 set -euo pipefail
 
 source ./colors.sh
+source ./symlink.sh
 
 #####################################################################
 # Variables                                                         #
@@ -28,8 +29,8 @@ function finish_section() {
 
 source ./fonts.sh
 source ./git.sh
+
 source ./programs.sh
 source ./theme.sh
-source ./symlink.sh
 
 dconf load / < ./dotfiles/settings.dconf
