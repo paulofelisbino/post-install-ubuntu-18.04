@@ -1,6 +1,6 @@
 #!/bin/bash
 
-start_section "programs"
+blue_text "Installing programs..."
 
 sudo apt update -y
 
@@ -12,6 +12,8 @@ sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd terminator tmux
 
 #install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+source ./programs/zsh.sh
 
 source ./programs/dbeaver.sh
 source ./programs/docker.sh
@@ -26,6 +28,6 @@ source ./programs/chrome.sh
 source ./programs/tusk.sh
 source ./programs/spotify.sh
 
-source ./programs/zsh.sh
+
 
 sudo snap install authy --beta && sudo snap install bitwarden vlc
