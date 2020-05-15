@@ -7,7 +7,7 @@ blue_text "Installing fonts..."
 #####################################################################
 
 # only install if absent
-if [ -z $(fc-list | grep -i "powerline") ]; then
+if ! fc-list | grep -i "powerline" >/dev/null; then
   yellow_text "Installing Powerline fonts..."
 
   git clone https://github.com/powerline/fonts.git --depth=1
