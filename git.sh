@@ -25,10 +25,16 @@ function linkHook {
 }
 
 #####################################################################
-# Start execution                                                   #
+# Configure hooks                                                   #
 #####################################################################
 
 linkHook commit-msg
 linkHook commit-msg.py
+
+#####################################################################
+# Configure global git                                              #
+#####################################################################
+
+linkDotfile .gitconfig
 
 blue_text "Git hooks configured!"

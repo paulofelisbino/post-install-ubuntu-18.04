@@ -1,6 +1,6 @@
 #!/bin/bash
 
-start_section "fonts"
+blue_text "Installing fonts..."
 
 #####################################################################
 # Install Powerline                                                 #
