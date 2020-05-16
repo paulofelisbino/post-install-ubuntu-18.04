@@ -15,13 +15,14 @@ source ./programs/zsh.sh
 source ./programs/tmux.sh
 
 # dev env
+source ./programs/chrome.sh
 source ./programs/docker.sh
 source ./programs/vscode.sh
 
-source ./programs/dbeaver.sh
-source ./programs/graphiql.sh
 source ./programs/postman.sh
-source ./programs/chrome.sh
+source ./programs/graphiql.sh
+source ./programs/dbeaver.sh
+
 
 source ./programs/slack.sh
 source ./programs/openfortigui.sh
