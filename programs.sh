@@ -10,11 +10,14 @@ sudo apt update -y
 
 sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd
 
+# terminal
 source ./programs/zsh.sh
 source ./programs/tmux.sh
 
-source ./programs/dbeaver.sh
+# dev env
 source ./programs/docker.sh
+
+source ./programs/dbeaver.sh
 source ./programs/graphiql.sh
 source ./programs/openfortigui.sh
 source ./programs/postman.sh
