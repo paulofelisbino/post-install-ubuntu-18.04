@@ -8,7 +8,7 @@ sudo apt update -y
 # Install stuff                                                     #
 #####################################################################
 
-sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd
+sudo apt install -y awscli curl filezilla gnome-tweak-tool snapd tig
 
 # terminal
 source ./programs/zsh.sh
