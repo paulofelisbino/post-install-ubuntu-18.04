@@ -1,27 +1,35 @@
 #!/bin/bash
 
-start_section "graphiql"
-
-#####################################################################
-# Install dependencies                                              #
-#####################################################################
-
-sudo apt-get install -y libcanberra-gtk-module
-
-#####################################################################
-# Download AppImage                                                 #
-#####################################################################
+blue_text "Installling Graphiql..."
 
 APP="graphiql-app-0.7.2-x86_64.AppImage"
-URL="https://github.com/skevy/graphiql-app/releases/download/v0.7.2/$APP"
 
-wget -c "$URL" -P "$DOWNLOADS_DIR"
+function install_graphiql() {
+  #####################################################################
+  # Install dependencies                                              #
+  #####################################################################
 
-#####################################################################
-# Install                                                           #
-#####################################################################
+  sudo apt-get install -y libcanberra-gtk-module
 
-sudo chmod +x "$DOWNLOADS_DIR/$APP"
-sudo mv "$DOWNLOADS_DIR/$APP" "$HOME"
+  #####################################################################
+  # Download AppImage                                                 #
+  #####################################################################
 
-finish_section "graphiql"
+  URL="https://github.com/skevy/graphiql-app/releases/download/v0.7.2/$APP"
+
+  wget -c "$URL" -P "$DOWNLOADS_DIR"
+
+  #####################################################################
+  # Install                                                           #
+  #####################################################################
+
+  sudo chmod +x "$DOWNLOADS_DIR/$APP"
+  sudo mv "$DOWNLOADS_DIR/$APP" "$HOME"
+}
+
+if [[ -e "$HOME/$APP" ]]; then
+  yellow_text "Graphiql already installed!"
+else
+  install_graphiql
+  yellow_text "Graphiql installed!"
+fi
