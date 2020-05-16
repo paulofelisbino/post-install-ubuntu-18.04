@@ -1,23 +1,29 @@
 #!/bin/bash
 
-start_section "dbeaver"
+blue_text "Installling DBeaver..."
 
-#####################################################################
-# Install dependencies                                              #
-#####################################################################
+function install_dbeaver() {
+  #####################################################################
+  # Install dependencies                                              #
+  #####################################################################
 
-wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
-echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
-sudo apt update -y
+  wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+  echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+  sudo apt update -y
 
-#####################################################################
-# Install                                                           #
-#####################################################################
+  #####################################################################
+  # Install                                                           #
+  #####################################################################
 
-sudo apt -y  install dbeaver-ce
+  sudo apt -y install dbeaver-ce
+}
 
-finish_section "dbeaver"
-
+if [ -x "$(command -v dbeaver)" ]; then
+  yellow_text "DBeaver already installed!"
+else
+  install_dbeaver
+  yellow_text "DBeaver installed!"
+fi
 
 
 
