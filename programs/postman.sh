@@ -1,40 +1,47 @@
 #!/bin/bash
 
-start_section "postman"
+blue_text "Installling postman..."
 
-#####################################################################
-# Download tar                                                      #
-#####################################################################
+function install_postman() {
+  #####################################################################
+  # Download tar                                                      #
+  #####################################################################
 
-TAR="postman.tar.gz"
-URL="https://dl.pstmn.io/download/latest/linux"
+  TAR="postman.tar.gz"
+  URL="https://dl.pstmn.io/download/latest/linux"
 
-wget -c "$URL" -O "$DOWNLOADS_DIR/$TAR"
+  wget -c "$URL" -O "$DOWNLOADS_DIR/$TAR"
 
-#####################################################################
-# Install                                                           #
-#####################################################################
+  #####################################################################
+  # Install                                                           #
+  #####################################################################
 
-tar -xzf "$DOWNLOADS_DIR/$TAR" -C "$DOWNLOADS_DIR"
-sudo mv "$DOWNLOADS_DIR/Postman" ~/Postman
+  tar -xzf "$DOWNLOADS_DIR/$TAR" -C "$DOWNLOADS_DIR"
+  sudo mv "$DOWNLOADS_DIR/Postman" ~/Postman
 
-#####################################################################
-# Wrap up                                                           #
-#####################################################################
+  #####################################################################
+  # Wrap up                                                           #
+  #####################################################################
 
-# create symbolic link
-sudo ln -s ~/Postman/Postman /usr/bin/postman
+  # create symbolic link
+  sudo ln -s ~/Postman/Postman /usr/bin/postman
 
-# add icon to launcher
-cat > ~/.local/share/applications/postman.desktop <<EOL
-[Desktop Entry]
-Encoding=UTF-8
-Name=Postman
-Exec=postman
-Icon=$HOME/Postman/app/resources/app/assets/icon.png
-Terminal=false
-Type=Application
-Categories=Development;
+  # add icon to launcher
+  cat > ~/.local/share/applications/postman.desktop <<EOL
+  [Desktop Entry]
+  Encoding=UTF-8
+  Name=Postman
+  Exec=postman
+  Icon=$HOME/Postman/app/resources/app/assets/icon.png
+  Terminal=false
+  Type=Application
+  Categories=Development;
 EOL
+}
 
-finish_section "postman"
+if [ -x "$(command -v postman)" ]; then
+  yellow_text "Postman already installed!"
+else
+  install_postman
+  yellow_text "Postman installed!"
+fi
