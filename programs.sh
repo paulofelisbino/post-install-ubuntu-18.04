@@ -16,16 +16,16 @@ source ./programs/tmux.sh
 
 # dev env
 source ./programs/docker.sh
+source ./programs/vscode.sh
 
 source ./programs/dbeaver.sh
 source ./programs/graphiql.sh
-source ./programs/openfortigui.sh
 source ./programs/postman.sh
-source ./programs/slack.sh
-source ./programs/virtualbox.sh
-source ./programs/vscode.sh
-
 source ./programs/chrome.sh
+
+source ./programs/slack.sh
+source ./programs/openfortigui.sh
+source ./programs/virtualbox.sh
 source ./programs/tusk.sh
 source ./programs/spotify.sh
 
